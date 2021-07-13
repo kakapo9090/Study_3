@@ -14,14 +14,14 @@ public class ForTest3 {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("종료 시간 초 입력");
-		int cho = sc.nextInt();
+		int cho = sc.nextInt(); // 희망 종료 시간
 		
 		for(int sec=0; sec<60; sec++) {
-			System.out.println(sec+"초");
-			if(sec == cho) {
-				sec = 60;
-			}
-		}
+			System.out.println(sec+"초"); //sec값 반복출력
+			if(sec == cho) { //희망 종료 시간과 일치하는지 확인
+				sec = 60;  // 값이 true면 sec을 60으로 대입 후 위로 보냄
+			} //다시 한번 반복문을 거치면서 최종적으로 sec값은 61이 되고, 			
+		} // sec<60 값이 false이므로 빠져나와 for문 종료.
 		
 		System.out.println("ForTest3 Finish");
 	}
