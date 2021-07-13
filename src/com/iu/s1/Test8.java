@@ -26,6 +26,7 @@ Scanner sc = new Scanner(System.in);
 		// 합격 기준
 		// 평균이 60점 이상
 		// 과목당 40점 이상
+/*
 		String result = "불합격";
 		
 		if (avg>=60 && kor>=40 && eng>=40 && math>=40) {
@@ -33,6 +34,46 @@ Scanner sc = new Scanner(System.in);
 		}
 		
 		System.out.println(result);
+*/
+// ---------------------- 3차 코드 -----------------------
+		if (avg>=60 && kor>=40 && eng>=40 && math>=40) {
+			System.out.println("합격");
+		}else {
+			System.out.println("불합격");
+		}
+		
+		
+// ----------------------- 2차 코드 -------------------------		
+//		if (avg>=60) {
+//			if(kor>=40 && eng>=40 && math>=40) {
+//			System.out.println("합격");
+//			}else {
+//			System.out.println("불합격");
+//			}
+//		}
+// ---------------------------------------------------------
+		
+// ------------------------ 1차 코드 ------------------------
+//		if(avg>=60) {
+//			if(kor>=40) {
+//				if(eng>=40) {
+//					if(math>=40) {
+//						System.out.println("합격");
+//					}else {
+//						System.out.println("수학 과락 불합격");
+//					}								
+//				}else {
+//					System.out.println("영어 과락 불합격");
+//				}								
+//			}else {
+//				System.out.println("국어 과락 불합격");
+//			}			
+//		} else {
+//			System.out.println("불합격");
+//		}
+// ---------------------------------------------------------		
+
+		
 		
 		System.out.println("Test8 Finish");
 	}
