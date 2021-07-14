@@ -18,11 +18,11 @@ public class ForTest9 {
 		// t: 탄창 b: 총알		
 		for(int t=3;t>0;t--) {
 			System.out.println("1.단발 2.점사");
-			int shot = sc.nextInt();
+			int select = sc.nextInt();
 			for(int b=30;b>0;b--) {
-				if(shot==1) {
+				if(select==1) {
 					System.out.println("탕");
-				}else if(shot != 1){
+				}else if(select != 1){
 					System.out.println("타타탕");
 					b=b-2;
 				}
