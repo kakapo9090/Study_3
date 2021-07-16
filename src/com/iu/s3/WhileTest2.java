@@ -87,7 +87,7 @@ public class WhileTest2 {
 			System.out.println("계속하시려면 아무 키나 눌러주세요.");
 			System.out.println("=================================");
 			go = sc.next();
-			//경험치 구간
+			//사냥 및 레벨업 메시지 구간
 			for(int kill=1; kill<=lv*3; kill++ ) {
 				System.out.println("몬스터 "+kill+"마리 사냥");
 				if(kill==lv*3) {
