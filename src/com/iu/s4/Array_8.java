@@ -27,17 +27,18 @@ public class Array_8 {
 					System.out.println("pw 입력");
 					int pw = sc.nextInt();
 					
+					//오류코드 수정필요
 					for(int i=0; i<ids.length; i++) {
 						if(id==ids[i] && pw==pws[i]) {
 							System.out.println("로그인 성공");
 							flag=!flag;
 							break;
-						}else {
-							System.out.println("로그인 실패");
-							break;
-							}	
+						}else if(i<=ids.length){
+							continue;
+							}						
 					}
-						break;
+					System.out.println("로그인 실패 메인으로 돌아갑니다");
+					break;
 						
 				case 2:
 					System.out.println("가입할 id 입력");
