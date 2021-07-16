@@ -33,11 +33,13 @@ public class Array_8 {
 							System.out.println("로그인 성공");
 							flag=!flag;
 							break;
-						}else if(i<=ids.length){
+						}else if(i<ids.length){
 							continue;
-							}						
+							}else if(i==ids.length && id!=ids[i] || pw!=pws[i]){	
+								System.out.println("로그인 실패 메인으로 돌아갑니다");
+							}
+					
 					}
-					System.out.println("로그인 실패 메인으로 돌아갑니다");
 					break;
 						
 				case 2:
