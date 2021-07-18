@@ -25,7 +25,7 @@ public class Array_5 {
 			System.out.println("1. 정보출력");
 			System.out.println("2. 정보추가");
 			System.out.println("3. 정보삭제");//맨 끝 데이터 삭제
-			System.out.println("4. 검색삭제");//
+			System.out.println("4. 검색삭제");//입력한 데이터 삭제
 			System.out.println("5. 종   료");
 			int select = sc.nextInt();
 				
